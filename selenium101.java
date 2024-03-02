@@ -1,0 +1,18 @@
+ChromeOptions browserOptions = new ChromeOptions();
+browserOptions.setPlatformName("Windows 10");
+browserOptions.setBrowserVersion("122.0");
+HashMap<String, Object> ltOptions = new HashMap<String, Object>();
+ltOptions.put("username", "jahnavibattu30");
+ltOptions.put("accessKey", "GqbDT46CLmUej6mFl4Px3wQ6NuwXVLWwJFFExFIPkDjKi5lIVO");
+ltOptions.put("geoLocation", "IN");
+ltOptions.put("visual", true);
+ltOptions.put("video", true);
+ltOptions.put("timezone", "Kolkata");
+ltOptions.put("build", "sample");
+ltOptions.put("project", "selenium");
+ltOptions.put("name", "lambda");
+ltOptions.put("tunnel", true);
+ltOptions.put("console", "warn");
+ltOptions.put("selenium_version", "4.0.0");
+ltOptions.put("w3c", true);
+browserOptions.setCapability("LT:Options", ltOptions);
